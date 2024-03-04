@@ -36,6 +36,10 @@
           <el-menu-item index="3" disabled>消息中心</el-menu-item>
           <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
           <el-menu-item index="5" @click="this.showSidebar = !this.showSidebar">节点</el-menu-item>
+          <hyper-parameter-dialog
+                  :hyper-parameter="hyperParameterTemp"
+                  @exportYaml="exportYaml">
+          </hyper-parameter-dialog>
       </el-menu>
 
     <!-- 右侧表单 -->
@@ -122,11 +126,9 @@
     <DAGBoard
       ref="DAGBoard"
       :DataAll="yourJSONDataFillThere"
-      :hyper-parameter="hyperParameterTemp"
       @updateDAG="updateDAG"
       @editNodeDetails="editNodeDetails"
       @doSthPersonal="doSthPersonal"
-      @exportYaml="exportYaml"
     ></DAGBoard>
 
     <!-- 用来模拟拖拽添加的元素 -->
@@ -145,9 +147,11 @@ import { hyper_parameter,diagramExampleData, JSONFromService, nodesBasic } from 
 import { convertToYoloV8Config } from './function.js'
 import {ElMessageBox} from "element-plus";
 import {ElMessage} from "element-plus";
+import hyperParameterDialog from "../../../plugin/FormAndDialog/hyperParameterDialog.vue";
 let cnt,head,len,num,next,to,ru,cu,ruNum,dp,rfa,index,check;
 export default {
   components: {
+      hyperParameterDialog
   },
   props: {},
   data () {
