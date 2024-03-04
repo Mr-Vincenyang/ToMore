@@ -86,10 +86,7 @@ export default {
     },
     changeModelRunningStatus() {
       this.$emit('changeModelRunningStatus', !this.modelRunningStatus)
-    },
-     exportYaml() {
-        this.$emit("exportYaml");
-     }
+    }
   }
 };
 </script>
