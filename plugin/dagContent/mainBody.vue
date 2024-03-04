@@ -77,6 +77,8 @@
 </template>
 
 <script>
+
+
     export default {
         props: {
             item: {
@@ -98,7 +100,12 @@
         },
         data() {
             return {
+              intervalId:null
             }
+        },
+        mounted(){
+          // 设置定时触发，间隔时间为 500 毫秒（即 0.5 秒）
+          this.intervalId = setInterval(this.isVertical, 500)
         },
         methods: {
           isVertical() {
@@ -109,6 +116,10 @@
             }
             return GlobalConfig.isVertical
           },
+        },
+        beforeDestroy() {
+          // 组件销毁前清除定时器，防止内存泄漏
+          clearInterval(this.intervalId);
         }
     }
 </script>

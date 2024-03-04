@@ -693,8 +693,8 @@ export default {
         width: 0,
         height: 0
       },
-      svg_left: 0,
-      svg_top: 0,
+      svg_left: 250,
+      svg_top: 250,
       svg_trans_init: {
         x: 0,
         y: 0
