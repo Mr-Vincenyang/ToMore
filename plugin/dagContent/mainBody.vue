@@ -52,8 +52,10 @@
                     type="text" class="name"
                     v-model="item.name"
                     @change="$emit('changeNodeName', item)">
+                    <el-icon :size="20" color="#409EFC" class="setting" @click="$emit('settingArg', item.id);"><Setting /></el-icon>
                 </div>
-                <p v-if="choice.paneNode.indexOf(item.id) !== -1" class="node-pop">{{item.nameDescribe || item.name}}</p>
+
+<!--                <p v-if="choice.paneNode.indexOf(item.id) !== -1" class="node-pop">{{item.nameDescribe || item.name}}</p>-->
                 <div id="parent-cross" :class="currentEvent === 'dragLink' ? 'pane-node-parent-hl' : 'pane-node-parent' ">
                   <div v-for="(poi, nth) in item.in_ports" :key="'__' + nth" :style="{width: `${ 100 / (item.in_ports.length + 1)}%`}">
                     <span
@@ -61,6 +63,7 @@
                     @mouseup="$emit('linkEnd', i, nth)"></span>
                   </div>
                 </div>
+
                 <div id="children-cross" class="pane-node-children">
                   <div v-for="(poi, nth) in item.out_ports" :key="'___' + nth" :style="{width: `${ 100 / (item.out_ports.length + 1)}%`}">
                     <span
@@ -74,6 +77,8 @@
 </template>
 
 <script>
+
+
     export default {
         props: {
             item: {
@@ -95,7 +100,12 @@
         },
         data() {
             return {
+              intervalId:null
             }
+        },
+        mounted(){
+          // 设置定时触发，间隔时间为 500 毫秒（即 0.5 秒）
+          this.intervalId = setInterval(this.isVertical, 500)
         },
         methods: {
           isVertical() {
@@ -106,6 +116,10 @@
             }
             return GlobalConfig.isVertical
           },
+        },
+        beforeDestroy() {
+          // 组件销毁前清除定时器，防止内存泄漏
+          clearInterval(this.intervalId);
         }
     }
 </script>

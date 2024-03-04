@@ -1,8 +1,8 @@
 <template>
-    <g>
-        <foreignObject height="100%" width="100%">
-            <body xmlns="http://www.w3.org/1999/xhtml" >
-                <el-button type="success" @click="openDialog" style="position: absolute;right: 10px">导出</el-button>
+<!--    <g>-->
+<!--        <foreignObject height="50%" width="50%">-->
+<!--            <body xmlns="http://www.w3.org/1999/xhtml" >-->
+                <el-button type="success" @click="openDialog" style="position: absolute;right: 10px;top: 14px">导出</el-button>
                 <el-dialog  title="参数设置"
                             v-model="hyperParameterForm"
                             width="35%">
@@ -33,9 +33,9 @@
                         </div>
                     </template>
                 </el-dialog>
-            </body>
-        </foreignObject>
-    </g>
+<!--            </body>-->
+<!--        </foreignObject>-->
+<!--    </g>-->
 
 </template>
 <script>

@@ -242,7 +242,7 @@ export default {
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {
-          this.$router.push('/diagramExample')
+            this.$router.push('/diagramExample')
         }).catch(() => {
 
         });

@@ -97,10 +97,7 @@
       :currentEvent="currentEvent"
     />
 
-    <hyper-parameter-dialog
-      :hyper-parameter="hyperParameter"
-       @exportYaml="exportYaml">
-    </hyper-parameter-dialog>
+
 
 
   </svg>
@@ -123,10 +120,6 @@ export default {
       type: Object,
       default: () => []
     },
-      hyperParameter: {
-        type:Object,
-        default: () => []
-      }
   },
 
   computed: {
@@ -659,9 +652,6 @@ export default {
     },
     nodesPersonalEvent(eventName, id) {
       this.$emit('doSthPersonal', eventName, id)
-    },
-    exportYaml() {
-        this.$emit("exportYaml");
     }
   },
   data() {
@@ -703,8 +693,8 @@ export default {
         width: 0,
         height: 0
       },
-      svg_left: 0,
-      svg_top: 0,
+      svg_left: 250,
+      svg_top: 250,
       svg_trans_init: {
         x: 0,
         y: 0

@@ -31,6 +31,11 @@
                         <use xlink:href="#icon-quanping"></use>
                   </svg>
                 </span>
+                <span @click="screenRotate">
+                  <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-screen-rotate"></use>
+                  </svg>
+                </span>
             </div>
         </body>
         </foreignObject>
@@ -59,6 +64,13 @@ export default {
     };
   },
   methods: {
+    screenRotate() {
+      let GlobalConfigString = localStorage.getItem('GlobalConfig')
+      let GlobalConfig = JSON.parse(GlobalConfigString)
+      GlobalConfig.isVertical = !GlobalConfig.isVertical
+      localStorage.setItem('GlobalConfig', JSON.stringify(GlobalConfig))
+     
+    },
     sizeExpend() {
       this.$emit("sizeExpend");
     },
@@ -86,10 +98,7 @@ export default {
     },
     changeModelRunningStatus() {
       this.$emit('changeModelRunningStatus', !this.modelRunningStatus)
-    },
-     exportYaml() {
-        this.$emit("exportYaml");
-     }
+    }
   }
 };
 </script>
@@ -98,7 +107,7 @@ export default {
 .control_menu {
   position: absolute;
   height: 30px;
-  width: 150px;
+  width: 180px;
   background: #cccccc;
   justify-content: space-around;
   display: flex;

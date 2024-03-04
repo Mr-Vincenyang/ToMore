@@ -4,44 +4,50 @@
 export const diagramExampleData = {
 
 }
-export const hyper_parameter=[
-        {label:'nc', value:80, state:false, step:1},
-        {label:'lr0', value:0.01, state:false, step:0.0001},
-        {label:'lrf', value:0.01, state:false, step:0.0001},
-        {label:'momentum', value:0.937, state:false, step:0.0001},
-        {label:'weight_decay', value:0.0005, state:false, step:0.0001},
-        {label:'warmup_epochs', value:3.0, state:false, step:0.0001},
-        {label:'warmup_momentum', value:0.8, state:false, step:0.0001},
-        {label:'warmup_bias_lr', value:0.1, state:false, step:0.0001},
-        {label:'box', value:7.5, state:false, step:0.0001},
-        {label:'cls', value:0.5, state:false, step:0.0001},
-        {label:'dfl', value:1.5, state:false, step:0.0001},
-        {label:'pose', value:12.0, state:false, step:0.0001},
-        {label:'kobj', value:1.0, state:false, step:0.0001},
-        {label:'label_smoothing', value:0.0, state:false, step:0.0001},
-        {label:'nbs', value:64, state:false, step:0.0001},
-        {label:'hsv_h', value:0.015, state:false, step:0.0001},
-        {label:'hsv_s', value:0.7, state:false, step:0.0001},
-        {label:'hsv_v', value:0.4, state:false, step:0.0001},
-        {label:'degrees', value:0.0, state:false, step:0.0001},
-        {label:'translate', value:0.1, state:false, step:0.0001},
-        {label:'scale', value:0.5, state:false, step:0.0001},
-        {label:'shear', value:0.0, state:false, step:0.0001},
-        {label:'perspective', value:0.0, state:false, step:0.0001},
-        {label:'flipud', value:0.0, state:false, step:0.0001},
-        {label:'fliplr', value:0.5, state:false, step:0.0001},
-        {label:'mosaic', value:1.0, state:false, step:0.0001},
-        {label:'mixup', value:0.0, state:false, step:0.0001},
-        {label:'copy_paste', value:0.0, state:false, step:0.0001},
-        {label:'auto_augment', value:'randaugment', state:false,options:[
-                { label: 'Option 1', value: 'option1' },
-                { label: 'Option 2', value: 'option2' },
-                { label: 'randaugument', value: 'randaugument'}
-            ], step:0.0001},
-        {label:'erasing', value:0.4, state:false, step:0.0001},
-        {label:'crop_fraction', value:1.0, state:false, step:0.0001},
-    ]
-export const JSONFromService = {"edges":[{"src_node_id":6,"src_output_idx":0,"dst_node_id":5,"dst_input_idx":0,"id":1,"edgesText":"我是边1"},{"src_node_id":5,"src_output_idx":1,"dst_node_id":3,"dst_input_idx":0,"id":2,"edgesText":"我是边1"},{"src_node_id":5,"src_output_idx":0,"dst_node_id":7,"dst_input_idx":0,"id":3,"edgesText":"我是边1"},{"src_node_id":7,"src_output_idx":0,"dst_node_id":4,"dst_input_idx":0,"id":4,"edgesText":"我是边1"},{"src_node_id":4,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":0,"id":5,"edgesText":"我是边1"},{"src_node_id":3,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":1,"id":6,"edgesText":"我是边1"},{"src_node_id":2,"src_output_idx":0,"dst_node_id":1,"dst_input_idx":0,"id":7,"edgesText":"我是边1"}],"nodes":[{"pos_x":255.3047619047619,"pos_y":-23.361901128859763,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":6,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":100,"pos_y":100,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":5,"in_ports":[0],"out_ports":[0,1],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":431.32307692307745,"pos_y":240.24615971491914,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":3,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":225.447619047619,"pos_y":178.87619410923554,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":7,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":224.59047619047612,"pos_y":287.78095601399747,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":4,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":254.78095238095233,"pos_y":418.4000036330452,"name":"Concat","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":2,"in_ports":[0,1],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"head"},{"pos_x":254.49523809523805,"pos_y":540.3047655378072,"name":"Detect","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":1,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"head"}]}
+export const hyper_parameter = [
+    { label: 'nc', value: 80, state: false, step: 1 },
+    { label: 'lr0', value: 0.01, state: false, step: 0.0001 },
+    { label: 'lrf', value: 0.01, state: false, step: 0.0001 },
+    { label: 'momentum', value: 0.937, state: false, step: 0.0001 },
+    { label: 'weight_decay', value: 0.0005, state: false, step: 0.0001 },
+    { label: 'warmup_epochs', value: 3.0, state: false, step: 0.0001 },
+    { label: 'warmup_momentum', value: 0.8, state: false, step: 0.0001 },
+    { label: 'warmup_bias_lr', value: 0.1, state: false, step: 0.0001 },
+    { label: 'box', value: 7.5, state: false, step: 0.0001 },
+    { label: 'cls', value: 0.5, state: false, step: 0.0001 },
+    { label: 'dfl', value: 1.5, state: false, step: 0.0001 },
+    { label: 'pose', value: 12.0, state: false, step: 0.0001 },
+    { label: 'kobj', value: 1.0, state: false, step: 0.0001 },
+    { label: 'label_smoothing', value: 0.0, state: false, step: 0.0001 },
+    { label: 'nbs', value: 64, state: false, step: 0.0001 },
+    { label: 'hsv_h', value: 0.015, state: false, step: 0.0001 },
+    { label: 'hsv_s', value: 0.7, state: false, step: 0.0001 },
+    { label: 'hsv_v', value: 0.4, state: false, step: 0.0001 },
+    { label: 'degrees', value: 0.0, state: false, step: 0.0001 },
+    { label: 'translate', value: 0.1, state: false, step: 0.0001 },
+    { label: 'scale', value: 0.5, state: false, step: 0.0001 },
+    { label: 'shear', value: 0.0, state: false, step: 0.0001 },
+    { label: 'perspective', value: 0.0, state: false, step: 0.0001 },
+    { label: 'flipud', value: 0.0, state: false, step: 0.0001 },
+    { label: 'fliplr', value: 0.5, state: false, step: 0.0001 },
+    { label: 'mosaic', value: 1.0, state: false, step: 0.0001 },
+    { label: 'mixup', value: 0.0, state: false, step: 0.0001 },
+    { label: 'copy_paste', value: 0.0, state: false, step: 0.0001 },
+    {
+        label: 'auto_augment', value: 'randaugment', state: false, options: [
+            { label: 'Option 1', value: 'option1' },
+            { label: 'Option 2', value: 'option2' },
+            { label: 'randaugument', value: 'randaugument' }
+        ], step: 0.0001
+    },
+    { label: 'erasing', value: 0.4, state: false, step: 0.0001 },
+    { label: 'crop_fraction', value: 1.0, state: false, step: 0.0001 },
+]
+
+
+
+export const JSONFromService = { "edges": [{ "src_node_id": 6, "src_output_idx": 0, "dst_node_id": 5, "dst_input_idx": 0, "id": 1, "edgesText": "我是边1" }, { "src_node_id": 5, "src_output_idx": 1, "dst_node_id": 3, "dst_input_idx": 0, "id": 2, "edgesText": "我是边1" }, { "src_node_id": 5, "src_output_idx": 0, "dst_node_id": 7, "dst_input_idx": 0, "id": 3, "edgesText": "我是边1" }, { "src_node_id": 7, "src_output_idx": 0, "dst_node_id": 4, "dst_input_idx": 0, "id": 4, "edgesText": "我是边1" }, { "src_node_id": 4, "src_output_idx": 0, "dst_node_id": 2, "dst_input_idx": 0, "id": 5, "edgesText": "我是边1" }, { "src_node_id": 3, "src_output_idx": 0, "dst_node_id": 2, "dst_input_idx": 1, "id": 6, "edgesText": "我是边1" }, { "src_node_id": 2, "src_output_idx": 0, "dst_node_id": 1, "dst_input_idx": 0, "id": 7, "edgesText": "我是边1" }], "nodes": [{ "pos_x": -201, "pos_y": 47, "name": "Conv", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 6, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 89, "pos_y": 45, "name": "BottleNeck", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 5, "in_ports": [0], "out_ports": [0, 1], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 510, "pos_y": -89.98843002319336, "name": "Conv", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 3, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 374, "pos_y": 37, "name": "BottleNeck", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 7, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 690.4500000000003, "pos_y": 39.50000000000004, "name": "BottleNeck", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 4, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 992.8666666666675, "pos_y": 41.66666666666677, "name": "Concat", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 2, "in_ports": [0, 1], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "head" }, { "pos_x": 1333.8666666666677, "pos_y": 44.66666666666678, "name": "Detect", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 1, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "head" }] }
+//export const JSONFromService = {"edges":[{"src_node_id":6,"src_output_idx":0,"dst_node_id":5,"dst_input_idx":0,"id":1,"edgesText":"我是边1"},{"src_node_id":5,"src_output_idx":1,"dst_node_id":3,"dst_input_idx":0,"id":2,"edgesText":"我是边1"},{"src_node_id":5,"src_output_idx":0,"dst_node_id":7,"dst_input_idx":0,"id":3,"edgesText":"我是边1"},{"src_node_id":7,"src_output_idx":0,"dst_node_id":4,"dst_input_idx":0,"id":4,"edgesText":"我是边1"},{"src_node_id":4,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":0,"id":5,"edgesText":"我是边1"},{"src_node_id":3,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":1,"id":6,"edgesText":"我是边1"},{"src_node_id":2,"src_output_idx":0,"dst_node_id":1,"dst_input_idx":0,"id":7,"edgesText":"我是边1"}],"nodes":[{"pos_x":255.3047619047619,"pos_y":-23.361901128859763,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":6,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":100,"pos_y":100,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":5,"in_ports":[0],"out_ports":[0,1],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":431.32307692307745,"pos_y":240.24615971491914,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":3,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":225.447619047619,"pos_y":178.87619410923554,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":7,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":224.59047619047612,"pos_y":287.78095601399747,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":4,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":254.78095238095233,"pos_y":418.4000036330452,"name":"Concat","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":2,"in_ports":[0,1],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"head"},{"pos_x":254.49523809523805,"pos_y":540.3047655378072,"name":"Detect","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":1,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"head"}]}
 // export const JSONFromService = { "edges": [{ "src_node_id": 100, "src_output_idx": 0, "dst_node_id": 101, "dst_input_idx": 0, "id": 10, "edgesText":"我是边1" }], "nodes": [{ "pos_x": 323.50000000000034, "pos_y": 117.00000000000011, "name": "服务端拿取的数据", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 100, "in_ports": [0], "out_ports": [0],"arg":{"n":1, "channel":1, "kernel_size":1, "stride":1, "padding":0},"pos":"head" }, { "pos_x": 198.75000000000023, "pos_y": 271.0000000000002, "name": "普通节点", "iconClassName": "el-icon-collection-tag", "form": { "details": "普通节点", "createTime": "2" }, "id": 101, "in_ports": [0], "out_ports": [0], "arg":{"n":2,"channel":2, "kernel_size":2, "stride":2, "padding":0, "bias":0},"pos":"head" }] }
 // {
 //     edges:[
@@ -86,22 +92,22 @@ export const nodesBasic = [{
     iconClassName: 'el-icon-collection-tag',
     form: { details: '普通节点的内容balabala', createTime: '' },
     arg: {
-        "n":1,
-        "stride":1,
-        "kernel_size":3,
-        "padding":2
+        "n": 1,
+        "stride": 1,
+        "kernel_size": 3,
+        "padding": 2
     },
-    pos:null
+    pos: null
 }, {
     name: 'C2f',
     iconClassName: 'el-icon-loading',
     form: { details: '动态节点的内容balabala', createTime: '' },
     arg: {
-        "n":3,
-        "stride":1,
-        "kernel_size":1
+        "n": 3,
+        "stride": 1,
+        "kernel_size": 1
     },
-    pos:null
+    pos: null
 }, {
     name: 'SPPF',
     form: { details: '自定义节点的内容balabala', createTime: '' },
@@ -115,29 +121,29 @@ export const nodesBasic = [{
         "background": "orange"
     },
     arg: {
-        "n":1,
-        "stride":1,
-        "kernel_size":1
+        "n": 1,
+        "stride": 1,
+        "kernel_size": 1
     },
-    pos:null
+    pos: null
 }, {
     name: 'Concat',
     form: { details: '节点内容自由编辑', createTime: '' },
     arg: {
-        "n":1,
-        "stride":2,
-        "kernel_size":1
+        "n": 1,
+        "stride": 2,
+        "kernel_size": 1
     },
-    pos:null
-},{
+    pos: null
+}, {
     name: 'Detect',
     form: { details: '节点内容自由编辑', createTime: '' },
     arg: {
-        "n":null,
-        "stride":2,
-        "kernel_size":1
+        "n": null,
+        "stride": 2,
+        "kernel_size": 1
     },
-    pos:null
+    pos: null
 }]
 // let cnt= 0;
 // let head=Array(yourJSONDataFillThere.nodes.length+10).fill(0);
