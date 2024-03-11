@@ -11,7 +11,7 @@
                         <el-autocomplete v-model="state" :fetch-suggestions="querySearchAsync" placeholder="Please input" @select="hyperParameterSelect"/>
                         <el-form>
                             <template v-for="param in hyperParameterTemp" :key="param.label">
-                                <el-form-item v-if="state === param.label">
+                                <el-form-item v-if="state === param.label" style="margin-top: 5px">
                                     <template v-if="typeof param.value === 'boolean' || typeof param.value === 'string'">
                                         <el-select v-model="param.value" class="mx-4" style="width: 170px">
                                             <el-option v-for="option in param.options" :key="option.value" :label="option.label" :value="option.value" />

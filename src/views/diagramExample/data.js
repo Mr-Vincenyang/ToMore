@@ -45,10 +45,7 @@ export const hyper_parameter = [
 ]
 
 
-
-export const JSONFromService = { "edges": [{ "src_node_id": 6, "src_output_idx": 0, "dst_node_id": 5, "dst_input_idx": 0, "id": 1, "edgesText": "我是边1" }, { "src_node_id": 5, "src_output_idx": 1, "dst_node_id": 3, "dst_input_idx": 0, "id": 2, "edgesText": "我是边1" }, { "src_node_id": 5, "src_output_idx": 0, "dst_node_id": 7, "dst_input_idx": 0, "id": 3, "edgesText": "我是边1" }, { "src_node_id": 7, "src_output_idx": 0, "dst_node_id": 4, "dst_input_idx": 0, "id": 4, "edgesText": "我是边1" }, { "src_node_id": 4, "src_output_idx": 0, "dst_node_id": 2, "dst_input_idx": 0, "id": 5, "edgesText": "我是边1" }, { "src_node_id": 3, "src_output_idx": 0, "dst_node_id": 2, "dst_input_idx": 1, "id": 6, "edgesText": "我是边1" }, { "src_node_id": 2, "src_output_idx": 0, "dst_node_id": 1, "dst_input_idx": 0, "id": 7, "edgesText": "我是边1" }], "nodes": [{ "pos_x": -201, "pos_y": 47, "name": "Conv", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 6, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 89, "pos_y": 45, "name": "BottleNeck", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 5, "in_ports": [0], "out_ports": [0, 1], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 510, "pos_y": -89.98843002319336, "name": "Conv", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 3, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 374, "pos_y": 37, "name": "BottleNeck", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 7, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 690.4500000000003, "pos_y": 39.50000000000004, "name": "BottleNeck", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 4, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "backbone" }, { "pos_x": 992.8666666666675, "pos_y": 41.66666666666677, "name": "Concat", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 2, "in_ports": [0, 1], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "head" }, { "pos_x": 1333.8666666666677, "pos_y": 44.66666666666678, "name": "Detect", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 1, "in_ports": [0], "out_ports": [0], "arg": { "n": 1, "channel": 1, "kernel_size": 1, "stride": 1, "padding": 0 }, "pos": "head" }] }
-//export const JSONFromService = {"edges":[{"src_node_id":6,"src_output_idx":0,"dst_node_id":5,"dst_input_idx":0,"id":1,"edgesText":"我是边1"},{"src_node_id":5,"src_output_idx":1,"dst_node_id":3,"dst_input_idx":0,"id":2,"edgesText":"我是边1"},{"src_node_id":5,"src_output_idx":0,"dst_node_id":7,"dst_input_idx":0,"id":3,"edgesText":"我是边1"},{"src_node_id":7,"src_output_idx":0,"dst_node_id":4,"dst_input_idx":0,"id":4,"edgesText":"我是边1"},{"src_node_id":4,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":0,"id":5,"edgesText":"我是边1"},{"src_node_id":3,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":1,"id":6,"edgesText":"我是边1"},{"src_node_id":2,"src_output_idx":0,"dst_node_id":1,"dst_input_idx":0,"id":7,"edgesText":"我是边1"}],"nodes":[{"pos_x":255.3047619047619,"pos_y":-23.361901128859763,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":6,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":100,"pos_y":100,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":5,"in_ports":[0],"out_ports":[0,1],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":431.32307692307745,"pos_y":240.24615971491914,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":3,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":225.447619047619,"pos_y":178.87619410923554,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":7,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":224.59047619047612,"pos_y":287.78095601399747,"name":"BottleNeck","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":4,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"backbone"},{"pos_x":254.78095238095233,"pos_y":418.4000036330452,"name":"Concat","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":2,"in_ports":[0,1],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"head"},{"pos_x":254.49523809523805,"pos_y":540.3047655378072,"name":"Detect","iconClassName":"el-icon-collection-tag","form":{"details":"服务端拿取的数据","createTime":"1"},"id":1,"in_ports":[0],"out_ports":[0],"arg":{"n":1,"channel":1,"kernel_size":1,"stride":1,"padding":0},"pos":"head"}]}
-// export const JSONFromService = { "edges": [{ "src_node_id": 100, "src_output_idx": 0, "dst_node_id": 101, "dst_input_idx": 0, "id": 10, "edgesText":"我是边1" }], "nodes": [{ "pos_x": 323.50000000000034, "pos_y": 117.00000000000011, "name": "服务端拿取的数据", "iconClassName": "el-icon-collection-tag", "form": { "details": "服务端拿取的数据", "createTime": "1" }, "id": 100, "in_ports": [0], "out_ports": [0],"arg":{"n":1, "channel":1, "kernel_size":1, "stride":1, "padding":0},"pos":"head" }, { "pos_x": 198.75000000000023, "pos_y": 271.0000000000002, "name": "普通节点", "iconClassName": "el-icon-collection-tag", "form": { "details": "普通节点", "createTime": "2" }, "id": 101, "in_ports": [0], "out_ports": [0], "arg":{"n":2,"channel":2, "kernel_size":2, "stride":2, "padding":0, "bias":0},"pos":"head" }] }
+export const JSONFromService ={"edges":[{"src_node_id":1,"src_output_idx":0,"dst_node_id":2,"dst_input_idx":0,"id":10},{"src_node_id":2,"src_output_idx":0,"dst_node_id":3,"dst_input_idx":0,"id":11},{"src_node_id":3,"src_output_idx":0,"dst_node_id":4,"dst_input_idx":0,"id":12},{"src_node_id":4,"src_output_idx":0,"dst_node_id":5,"dst_input_idx":0,"id":13},{"src_node_id":5,"src_output_idx":0,"dst_node_id":6,"dst_input_idx":0,"id":14},{"src_node_id":6,"src_output_idx":0,"dst_node_id":7,"dst_input_idx":0,"id":15},{"src_node_id":7,"src_output_idx":0,"dst_node_id":8,"dst_input_idx":0,"id":16},{"src_node_id":8,"src_output_idx":0,"dst_node_id":9,"dst_input_idx":0,"id":17},{"src_node_id":9,"src_output_idx":0,"dst_node_id":10,"dst_input_idx":0,"id":18},{"src_node_id":10,"src_output_idx":0,"dst_node_id":11,"dst_input_idx":0,"id":19},{"src_node_id":11,"src_output_idx":0,"dst_node_id":12,"dst_input_idx":0,"id":20},{"src_node_id":7,"src_output_idx":1,"dst_node_id":12,"dst_input_idx":1,"id":21},{"src_node_id":12,"src_output_idx":0,"dst_node_id":13,"dst_input_idx":0,"id":22},{"src_node_id":13,"src_output_idx":0,"dst_node_id":14,"dst_input_idx":0,"id":23},{"src_node_id":14,"src_output_idx":0,"dst_node_id":15,"dst_input_idx":0,"id":24},{"src_node_id":5,"src_output_idx":1,"dst_node_id":15,"dst_input_idx":1,"id":25},{"src_node_id":15,"src_output_idx":0,"dst_node_id":16,"dst_input_idx":0,"id":26},{"src_node_id":16,"src_output_idx":0,"dst_node_id":17,"dst_input_idx":0,"id":27},{"src_node_id":17,"src_output_idx":0,"dst_node_id":18,"dst_input_idx":1,"id":28},{"src_node_id":13,"src_output_idx":1,"dst_node_id":18,"dst_input_idx":0,"id":29},{"src_node_id":18,"src_output_idx":0,"dst_node_id":19,"dst_input_idx":0,"id":30},{"src_node_id":19,"src_output_idx":0,"dst_node_id":20,"dst_input_idx":0,"id":31}],"nodes":[{"pos_x":60.98823529411757,"pos_y":-183.56285885081573,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"普通节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":1,"kernel_size":3,"padding":2},"pos":null,"id":1,"in_ports":[0],"out_ports":[0]},{"pos_x":61.16470588235288,"pos_y":-109.85697649787456,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"普通节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":1,"kernel_size":3,"padding":2},"pos":null,"id":2,"in_ports":[0],"out_ports":[0]},{"pos_x":59.10588235294111,"pos_y":-34.62168238022748,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":3,"in_ports":[0],"out_ports":[0]},{"pos_x":58.16470588235288,"pos_y":39.73125879624312,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"普通节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":1,"kernel_size":3,"padding":2},"pos":null,"id":4,"in_ports":[0],"out_ports":[0]},{"pos_x":58.34117647058818,"pos_y":115.84890585506665,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":5,"in_ports":[0],"out_ports":[0,1]},{"pos_x":29.39999999999995,"pos_y":198.39063330756298,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"普通节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":1,"kernel_size":3,"padding":2},"pos":null,"id":6,"in_ports":[0],"out_ports":[0]},{"pos_x":29.84444444444439,"pos_y":274.27952219645186,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":7,"in_ports":[0],"out_ports":[0,1]},{"pos_x":-1.2666666666669641,"pos_y":399.2859499613447,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"普通节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":1,"kernel_size":3,"padding":2},"pos":null,"id":8,"in_ports":[0],"out_ports":[0]},{"pos_x":-2.266666666666964,"pos_y":477.95261662801147,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":9,"in_ports":[0],"out_ports":[0]},{"pos_x":-0.9333333333336213,"pos_y":549.2859499613448,"name":"SPPF","form":{"details":"自定义节点的内容balabala","createTime":"Mon Mar 11 2024"},"iconClassName":"el-icon-magic-stick","nodeStyle":{"border":"2px solid orange","border-radius":0,"height":"30px"},"iconStyle":{"background":"orange"},"arg":{"n":1,"stride":1,"kernel_size":1},"pos":null,"id":10,"in_ports":[0],"out_ports":[0]},{"pos_x":-1.600000000000307,"pos_y":626.6192832946782,"name":"nn.Upsample","form":{"details":"节点内容自由编辑","createTime":"Mon Mar 11 2024"},"arg":{"n":null,"stride":2,"kernel_size":1},"nodeStyle":{"border":"2px solid green","border-radius":0,"height":"30px"},"iconStyle":{"background":"green"},"pos":null,"id":11,"in_ports":[0],"out_ports":[0]},{"pos_x":245.66666666666646,"pos_y":475.8888888888896,"name":"Concat","form":{"details":"节点内容自由编辑","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":2,"kernel_size":1},"nodeStyle":{"border":"2px solid yellow","border-radius":0,"height":"30px"},"iconStyle":{"background":"yellow"},"pos":null,"id":12,"in_ports":[0,1],"out_ports":[0]},{"pos_x":245.4920634920632,"pos_y":548.1111111111122,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":13,"in_ports":[0],"out_ports":[0,1]},{"pos_x":237.99999999999972,"pos_y":626.5555555555565,"name":"nn.Upsample","form":{"details":"节点内容自由编辑","createTime":"Mon Mar 11 2024"},"arg":{"n":null,"stride":2,"kernel_size":1},"nodeStyle":{"border":"2px solid green","border-radius":0,"height":"30px"},"iconStyle":{"background":"green"},"pos":null,"id":14,"in_ports":[0],"out_ports":[0]},{"pos_x":481.1111111111111,"pos_y":395.11111111111177,"name":"Concat","form":{"details":"节点内容自由编辑","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":2,"kernel_size":1},"nodeStyle":{"border":"2px solid yellow","border-radius":0,"height":"30px"},"iconStyle":{"background":"yellow"},"pos":null,"id":15,"in_ports":[0,1],"out_ports":[0]},{"pos_x":479.2539682539682,"pos_y":468.25396825396945,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":16,"in_ports":[0],"out_ports":[0]},{"pos_x":478.3968253968253,"pos_y":544.1111111111115,"name":"Conv","iconClassName":"el-icon-collection-tag","form":{"details":"普通节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":1,"kernel_size":3,"padding":2},"pos":null,"id":17,"in_ports":[0],"out_ports":[0]},{"pos_x":477.08903318903344,"pos_y":628.389040124847,"name":"Concat","form":{"details":"节点内容自由编辑","createTime":"Mon Mar 11 2024"},"arg":{"n":1,"stride":2,"kernel_size":1},"nodeStyle":{"border":"2px solid yellow","border-radius":0,"height":"30px"},"iconStyle":{"background":"yellow"},"pos":null,"id":18,"in_ports":[0,1],"out_ports":[0]},{"pos_x":477.4526695526697,"pos_y":714.570858306668,"name":"C2f","iconClassName":"el-icon-loading","form":{"details":"动态节点的内容balabala","createTime":"Mon Mar 11 2024"},"arg":{"n":3,"stride":1,"kernel_size":1},"nodeStyle":{"border":"2px solid pink","border-radius":0,"height":"30px"},"iconStyle":{"background":"pink"},"pos":null,"id":19,"in_ports":[0],"out_ports":[0]},{"pos_x":475.63448773448795,"pos_y":800.6617673975779,"name":"Detect","form":{"details":"节点内容自由编辑","createTime":"Mon Mar 11 2024"},"arg":{"n":null,"stride":2,"kernel_size":1},"pos":null,"id":20,"in_ports":[0],"out_ports":[0]}]}
 // {
 //     edges:[
 //         {
@@ -104,8 +101,16 @@ export const nodesBasic = [{
     form: { details: '动态节点的内容balabala', createTime: '' },
     arg: {
         "n": 3,
+        "isRestful":true,
         "stride": 1,
         "kernel_size": 1
+    },nodeStyle: {
+        "border": "2px solid pink",
+        "border-radius": 0,
+        "height": "30px"
+    },
+    iconStyle: {
+        "background": "pink"
     },
     pos: null
 }, {
@@ -134,17 +139,58 @@ export const nodesBasic = [{
         "stride": 2,
         "kernel_size": 1
     },
+    nodeStyle: {
+        "border": "2px solid yellow",
+        "border-radius": 0,
+        "height": "30px"
+    },
+    iconStyle: {
+        "background": "yellow"
+    },
     pos: null
 }, {
     name: 'Detect',
+    form: { details: '节点内容自由编辑', createTime: '' },
+    arg: {
+        "nc": 80
+    },
+    pos: null
+},{
+    name: 'BottleNeck',
     form: { details: '节点内容自由编辑', createTime: '' },
     arg: {
         "n": null,
         "stride": 2,
         "kernel_size": 1
     },
+    nodeStyle: {
+        "border": "2px solid red",
+        "border-radius": 0,
+        "height": "30px"
+    },
+    iconStyle: {
+        "background": "red"
+    },
     pos: null
-}]
+},{
+    name: 'nn.Upsample',
+    form: { details: '节点内容自由编辑', createTime: '' },
+    arg: {
+        "n": "None",
+        "stride": 2,
+        "kernel_size": 'nearest'
+    },
+    nodeStyle: {
+        "border": "2px solid green",
+        "border-radius": 0,
+        "height": "30px"
+    },
+    iconStyle: {
+        "background": "green"
+    },
+    pos: null
+}
+]
 // let cnt= 0;
 // let head=Array(yourJSONDataFillThere.nodes.length+10).fill(0);
 // let next = Array(2*head.length).fill(0);
