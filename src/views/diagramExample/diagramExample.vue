@@ -145,7 +145,7 @@
 <script>
 import { hyper_parameter,diagramExampleData, JSONFromService, nodesBasic } from './data.js'
 import { convertToYoloV8Config } from './function.js'
-import {ElMessageBox} from "element-plus";
+import {ElMessageBox, ElNotification} from "element-plus";
 import {ElMessage} from "element-plus";
 import hyperParameterDialog from "../../../plugin/FormAndDialog/hyperParameterDialog.vue";
 let cnt,head,len,num,next,to,ru,cu,ruNum,dp,rfa,index,check;
@@ -531,18 +531,20 @@ export default {
     //   alert('节点信息更新完成' + str)
     // },
     exportYaml() {
-        cnt= 0;
-        num = this.yourJSONDataFillThere.nodes.length
-        head=Array(this.yourJSONDataFillThere.nodes.length+10).fill(0);
-        len = head.length
-        next=Array(2*len).fill(0);
-        to = Array(2*len).fill(0);
-        ru = Array(len).fill(0);
-        cu = Array(len).fill(0);
-        ruNum = Array.from(Array(len), () => new Array(0))
-        dp = Array(len).fill(0);
-        rfa = Array(len).fill(0);
+        cnt= 0;//计数器
+        //链式前向星
+        num = this.yourJSONDataFillThere.nodes.length //节点数
+        head=Array(this.yourJSONDataFillThere.nodes.length+10).fill(0); //创建节点数+10大小的数组
+        len = head.length //head数组长度
+        next=Array(2*len).fill(0); //创建next数组，长度为2*len
+        to = Array(2*len).fill(0); //创建to数组，长度为2*len
+        ru = Array(len).fill(0);              //创建入度数组
+        cu = Array(len).fill(0);              //创建出度数组
+        ruNum = Array.from(Array(len), () => new Array(0))  //创建ruNum二维数组
+        dp = Array(len).fill(0);              //DAG节点深度数组
+        rfa = Array(len).fill(0);             //
         index = [];
+
         check = Array(num+1).fill(false);
         let result = {
             head:[],
@@ -562,7 +564,10 @@ export default {
             ruNum[y].unshift(x);
             cu[x] += 1;
         }
-
+        //检查是否存在环或者存在多个输入点
+        if (!this.topu()) {
+            return
+        }
         for (let i = 1; i <= num; i++) {
             if (ru[i] == 0) start = i;
             if (cu[i] == 0) end = i;
@@ -625,7 +630,54 @@ export default {
           this.dfs(root, o);
       }
       return
-    }
+    },
+      topu(){
+          const rut= JSON.parse(JSON.stringify(ru))
+          const ru0 = [];
+          //获取入度为0的节点
+          for (let i = 1; i <= num; i++) {
+              if (rut[i] == 0) {
+                  ru0.push(i)
+              }
+          }
+          for (let i = 0; i < ru0.length; i++) {
+              console.log(ru0[i]);
+          }
+          //如果入度为0的节点不止一个，则报错
+          if (ru0.length!=1) {
+              ElNotification({
+                  title: 'Error',
+                  message: '模型中存在两个输入点，请检查！',
+                  type: 'error',
+              });
+              return false;
+          }
+          //开始拓扑排序
+          let check = Array(rut.length).fill(false)
+          while (ru0.length!=0) {
+              let t = ru0.shift()
+              check[t] = true;
+              for (let i = head[t];i;i=next[i]) {
+                  let o = to[i]
+                  rut[o] -=1
+                  if (rut[o] == 0) {
+                      ru0.push(o);
+                  }
+              }
+          }
+          //检查是否存在环
+          for (let i = 1; i <= num; i++) {
+              if (!check[i]) {
+                  ElNotification({
+                      title: 'Error',
+                      message: '模型中存在环，请检查！',
+                      type: 'error',
+                  });
+                  return false;
+              }
+          }
+          return true;
+      }
   }
 }
 </script>
